@@ -22,15 +22,18 @@ do{
 
     cout<<"What is the item? "<<endl;
     cin>>item; 
+  
+  if(numItems < 4){
     
     list[numItems] = item;
     numItems++;
 
     }
+  
+  else{
+   cout<<"You'll need a bigger list! "<<endl;
 
-if(list > 4){
-
-cout<<"You'll need a bigger list! "<<endl;
+    }
 
 }
 
