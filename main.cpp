@@ -20,10 +20,10 @@ do{
 
     string item;
 
-    cout<<"What is the item? "<<endl;
+    cout<<"What is the item?"<<endl;
     cin>>item; 
   
-  if(numItems < 4){
+  if(numItems < 5){
     
     list[numItems] = item;
     numItems++;
@@ -31,7 +31,7 @@ do{
     }
   
   else{
-   cout<<"You'll need a bigger list! "<<endl;
+   cout<<"You'll need a bigger list!"<<endl;
 
     }
 
