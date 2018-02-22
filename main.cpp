@@ -1,3 +1,4 @@
+//Author: McDermott Liam Shimada 
 #include<iostream>
 #include<string>
 using namespace std;
@@ -7,7 +8,7 @@ int main()
   string list[5]; //array of 5 strings
   int numItems = 0;
   char input;
-
+do{
   cout<<"\n==GROCERY LIST MANAGER==";
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
@@ -15,5 +16,26 @@ int main()
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
 
-  return 0;
+    if(input == 'a' || input == 'A'){
+
+    string item;
+
+    cout<<"What is the item? "<<endl;
+    cin>>item; 
+    
+    list[numItems] = item;
+    numItems++;
+
+    }
+
+if(list > 4){
+
+cout<<"You'll need a bigger list! "<<endl;
+
+}
+
+}while(input != 'q' && input != 'Q');
+
+
+return 0;
 }
