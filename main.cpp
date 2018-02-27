@@ -50,7 +50,7 @@ int main()
         for(index = 0; index < 5; index++){
 
 
-                cout<<""<<index + 1<<list[index]<<"\n";
+                cout<<""<<index + 1<<" "<<list[index]<<"\n";
 
 
         }
