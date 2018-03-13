@@ -47,7 +47,7 @@ int main()
         else
         {
 
-         return 0; 
+         cout<<"No items to buy! "<<endl;
 
         }
        
