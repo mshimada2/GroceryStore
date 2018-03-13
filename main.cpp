@@ -1,14 +1,20 @@
 //Author: McDermott Liam Shimada 
 #include<iostream>
 #include<string>
+#include <vector>
+
 using namespace std;
 
 int main()
 {
-        string list[5]; //array of 5 strings
         int numItems = 0;
         char input;
-        do{
+        vector <string> groceryList; 
+        
+  
+        do
+        {
+                
                 cout<<"\n==GROCERY LIST MANAGER==";
                 cout<<"\nEnter your choice: ";
                 cout<<"\n (A)dd an item";
@@ -19,41 +25,43 @@ int main()
 
 
                 if(input == 'a' || input == 'A'){
-
                         string item;
-
                         cout<<"What is the item?"<<endl;
                         cin>>item; 
+                        
+                        groceryList.push_back(item);
 
 
-                        if(numItems < 5){
-
-                                list[numItems] = item;
-                                numItems++; 
-
-
-                        }
-
-                        else{
-                                cout<<"You'll need a bigger list!"<<endl;
-
-                        }
 
                 }
 
         }while(input != 'q' && input != 'Q');
 
+        if(groceryList.size() > 0)
+        {
+
         cout<<"==ITEMS TO BUY==\n";
+        
+        }
 
-        int index;
+        else
+        {
 
-        for(index = 0; index < 5; index++){
+         return 0; 
 
+        }
+       
 
-                cout<<""<<index + 1<<" "<<list[index]<<"\n";
+        for(int index = 0; index < groceryList.size(); index++){
+               
+               string food;
+               food = groceryList[index];
+
+                cout<<""<<index + 1<<" "<<food<<"\n";
 
 
         }
 
+        
         return 0;
 }
