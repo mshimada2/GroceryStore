@@ -47,7 +47,7 @@ int main()
         else
         {
 
-         cout<<"No items to buy! "<<endl;
+         cout<<"No items to buy!"<<endl;
 
         }
        
